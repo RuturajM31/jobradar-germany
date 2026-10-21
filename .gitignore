@@ -1,0 +1,77 @@
+# ============================================================
+# JobRadar Germany — Git Security
+# ============================================================
+
+# Python generated files
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+crewai_env/
+.conda/
+
+# Windows / editor
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+.streamlit/secrets.toml
+
+# Private JobRadar information
+data/private/
+**/professional_profile.json
+
+# Local databases
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+
+# Credentials and authentication
+*oauth*client*.json
+*oauth*token*.json
+*credentials*.json
+*secret*.json
+*token*.json
+
+# Job search output
+logs/
+outputs/
+reports/
+*.log
+
+# Personal documents and exports
+*.pdf
+*.docx
+*.xlsx
+*.xls
+*.csv
+
+# Notebook temporary files
+.ipynb_checkpoints/
+
+# Local test artifacts
+tmp/
+temp/.crewai/
+tutor/

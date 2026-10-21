@@ -1,0 +1,50 @@
+# ============================================================
+# JobRadar Germany — CV Matching Configuration
+# Day 11: CrewAI Project
+#
+# Purpose:
+# Define how jobs are ranked against the professional profile.
+#
+# Theory:
+# An AI agent can analyze a job description.
+# Python can apply fixed weights to produce a consistent score.
+#
+# Important:
+# Match scores estimate suitability, NOT hiring probability.
+# ============================================================
+
+scoring:
+
+  # Maximum score: 100 points
+  weights:
+    technical_skills: 35
+    relevant_experience: 25
+    language_requirements: 15
+    location_work_mode: 15
+    seniority: 10
+
+  # Job ranking categories
+  thresholds:
+    high_match: 80
+    potential_match: 60
+
+  # Special matching rules
+  rules:
+
+    # Flag C1/C2 requirements instead of rejecting jobs.
+    flag_advanced_german: true
+
+    # Missing information is not proof of a mismatch.
+    missing_information: unknown
+
+    # Do not invent skills or professional experience.
+    evidence_based_matching: true
+
+    # Explain what matches and what is not demonstrated.
+    explain_scores: true
+
+    # Do not automatically reject lower-scoring vacancies.
+    retain_low_matches: true
+
+    # Never interpret a match score as hiring probability.
+    score_is_hiring_probability: false

@@ -1,0 +1,178 @@
+# ============================================================
+# JobRadar Germany — Search Preferences
+# Day 11: CrewAI Project
+#
+# THEORY:
+# Configuration files separate business rules from Python code.
+#
+# This file defines:
+# - Employment preferences
+# - Geographic coverage
+# - Remote, hybrid and on-site preferences
+# - Relocation requirements
+# - Language and seniority preferences
+#
+# IMPORTANT:
+# A remote job must explicitly permit working from Germany.
+# Relocation requires an individual assessment.
+# ============================================================
+
+# EMPLOYMENT
+employment:
+  preferred_type: Full-time
+
+  allowed_types:
+    - Full-time
+
+  exclude:
+    - Working Student
+    - Internship
+    - Ausbildung
+    - Mini-job
+
+# LOCATION PREFERENCES
+locations:
+  country: Germany
+
+  preferred_cities:
+    - Munich
+    - Augsburg
+
+  nearby_areas:
+    - Friedberg
+    - Gersthofen
+    - Königsbrunn
+    - Neusäß
+    - Dachau
+    - Fürstenfeldbruck
+    - Landsberg am Lech
+    - Stadtbergen
+    - Bobingen
+    - Mering
+    - Diedorf
+    - Aichach
+    - Ottobrunn
+    - Ismaning
+    - Unterföhring
+    - Garching
+    - Unterschleißheim
+    - Germering
+    - Starnberg
+
+  # Remote positions may be located anywhere in Germany.
+  remote_germany: true
+
+  # Additional employment markets worth searching.
+  # These are not automatically considered commutable.
+  additional_job_markets:
+    - Stuttgart
+    - Karlsruhe
+    - Mannheim
+    - Heidelberg
+    - Ulm
+    - Ingolstadt
+    - Nuremberg
+    - Erlangen
+    - Regensburg
+    - Frankfurt
+    - Darmstadt
+    - Berlin
+    - Hamburg
+    - Cologne
+    - Düsseldorf
+    - Bonn
+    - Hanover
+    - Bremen
+    - Leipzig
+    - Dresden
+    - Dortmund
+
+  commute:
+    flexible: true
+    maximum_minutes: null
+
+# WORK ARRANGEMENTS
+work_arrangements:
+  remote:
+    enabled: true
+    germany_wide: true
+    prefer_fully_remote: true
+    verify_germany_eligibility: true
+
+  hybrid:
+    enabled: true
+    preferred_near_home: true
+    other_german_cities: true
+    verify_office_attendance: true
+
+  onsite:
+    enabled: true
+    preferred_near_home: true
+    other_german_cities_only_if_strong_match: true
+
+# RELOCATION
+relocation:
+  willing_to_relocate: true
+
+  # Consider relocation only for strong opportunities.
+  strong_match_only: true
+  minimum_match_score: 80
+
+  # A numerical score alone is not sufficient.
+  evaluate:
+    - Relevant skills and experience
+    - Salary and benefits
+    - Career progression
+    - Language requirements
+    - Employment stability
+    - Relocation practicality
+
+  require_manual_decision: true
+
+# LANGUAGE PREFERENCES
+languages:
+  search:
+    - English
+    - German
+
+  preferred:
+    - English
+    - German B1
+    - German B2
+
+  flag_requirements:
+    - German C1
+    - German C2
+    - Native German
+
+  exclude_higher_levels: false
+
+# SENIORITY
+seniority:
+  preferred:
+    - Mid-level
+    - Senior
+
+  consider_when_relevant:
+    - Junior
+    - Lead
+
+# SCHEDULING
+schedule:
+  automatic_search: true
+  frequency: daily
+  preferred_time: morning
+  timezone: Europe/Berlin
+  manual_search_enabled: true
+
+# SEARCH RULES
+search_rules:
+  include_hybrid: true
+  include_onsite: true
+  include_remote: true
+
+  remove_duplicates: true
+  require_application_url: true
+  keep_previous_applications: true
+
+  never_apply_automatically: true

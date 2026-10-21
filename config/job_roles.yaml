@@ -1,0 +1,68 @@
+# ============================================================
+# JobRadar Germany — Job Role Configuration
+# Day 11: CrewAI Project
+#
+# Purpose:
+# Define job titles relevant to the user's professional profile.
+#
+# Theory:
+# Configuration separates search preferences from Python code.
+# CrewAI agents will use these job-role groups to guide searches.
+#
+# Priority A = Strongest matches
+# Priority B = Related opportunities
+# Priority C = Transferable or growth opportunities
+#
+# Each entry contains a main title and alternative search terms.
+# ============================================================
+
+roles:
+
+  priority_a:
+    Data Analyst: ["Datenanalyst", "Senior Data Analyst"]
+    Business Intelligence Analyst: ["BI Analyst", "BI Specialist"]
+    BI Developer: ["Power BI Developer", "BI Entwickler"]
+    Reporting Analyst: ["Reporting Specialist", "Berichtswesen"]
+    Business Analyst: ["Geschäftsanalyst"]
+    Business Process Analyst: ["Prozessanalyst"]
+    Marketing Data Analyst: ["Marketing Analyst"]
+    Digital Analyst: ["Web Analyst", "Digital Analytics Specialist"]
+    Product Analyst: ["Product Data Analyst"]
+    Performance Analyst: ["KPI Analyst", "Performance Controller"]
+    Data Quality Analyst: ["Datenqualitätsanalyst"]
+    BI Consultant: ["Business Intelligence Consultant"]
+    Analytics Consultant: ["Data Analytics Consultant"]
+
+  priority_b:
+    Supply Chain Analyst: ["Supply Chain Data Analyst"]
+    Inventory Analyst: ["Bestandsanalyst"]
+    Procurement Analyst: ["Einkaufsanalyst"]
+    Operations Analyst: ["Operational Performance Analyst"]
+    Market Research Analyst: ["Marktforschungsanalyst"]
+    Market Intelligence Analyst: ["Marktanalyst", "Competitive Intelligence Analyst"]
+    Customer Insights Analyst: ["Customer Analytics Specialist"]
+    CRM Analyst: ["CRM Data Analyst"]
+    Sales Analyst: ["Vertriebsanalyst"]
+    E-commerce Analyst: ["Online Shop Analyst"]
+    Growth Analyst: ["Growth Analytics Specialist"]
+    Campaign Analyst: ["Marketing Performance Analyst"]
+    ERP Data Analyst: ["SAP Reporting Analyst"]
+    Data Warehouse Analyst: ["DWH Analyst"]
+    Demand Planning Analyst: ["Forecasting Analyst"]
+    Data Engineer: ["SQL Data Engineer", "ETL Developer"]
+    Data Visualization Specialist: ["Dashboard Developer"]
+    Requirements Analyst: ["Requirements Engineer"]
+
+  priority_c:
+    Analytics Engineer: ["Data Analytics Engineer"]
+    Product Owner - Data: ["BI Product Owner", "Data Product Owner"]
+    Data Product Analyst: ["Product Analytics Specialist"]
+    Data Governance Specialist: ["Data Governance Analyst"]
+    Business Systems Analyst: ["IT Business Analyst"]
+    Commercial Analyst: ["Commercial Data Analyst"]
+    Revenue Analyst: ["Revenue Analytics Specialist"]
+    Data Scientist: ["Applied Data Scientist", "Junior Data Scientist"]
+    AI Business Analyst: ["AI Transformation Analyst"]
+    AI Automation Analyst: ["AI Process Automation Analyst"]
+    Digital Transformation Analyst: ["Digital Transformation Specialist"]
+    Marketing Operations Analyst: ["Marketing Operations Specialist"]
