@@ -75,3 +75,7 @@ reports/
 tmp/
 temp/.crewai/
 tutor/
+
+# Local CrewAI runtime and personal study notes
+.crewai/
+THEORY_NOTES.md
